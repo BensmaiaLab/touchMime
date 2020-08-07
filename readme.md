@@ -22,15 +22,15 @@ To call the GUI interface, type 'TouchMime' in the command line.
 ### dependencies
 
 * MATLAB
-  * Signal Processing Toolbox
-  * Image Processing Toolbox
-  * Statistics and Machine Learning Toolbox
-  * Fuzzy Logic Toolbox
-  * Curve Fitting Toolbox
-  * Bioinformatics Toolbox
-  * Econometrics Toolbox
-  * Parallel Computing Toolbox
-  * MATLAB Distributed Computing Server
+    * Signal Processing Toolbox
+    * Image Processing Toolbox
+    * Statistics and Machine Learning Toolbox
+    * Fuzzy Logic Toolbox
+    * Curve Fitting Toolbox
+    * Bioinformatics Toolbox
+    * Econometrics Toolbox
+    * Parallel Computing Toolbox
+    * MATLAB Distributed Computing Server
 
 
 ## Choosing Parameters
@@ -45,21 +45,21 @@ per second your sensor can provide). In the paper cited above, we show that
 100 Hz is the minimum sampling rate, but prediction accuracy improves with
 resolution.
 1. NUMBER OF LAGS - is the number of lags of position, speed and acceleration
-that the model will include (see the paper for details). 
-  * Depending on your sampling rate, you should pick an optimal time window for
+that the model will include (see the paper for details).
+    * Depending on your sampling rate, you should pick an optimal time window for
 accumulation of lags. For example, at 500 Hz and with 5 lags, stimulus
 information will accumulate over 10 ms of the stimulus. 
-  * We do not recommend more than 7 lags since more lags involve more
+    * We do not recommend more than 7 lags since more lags involve more
   computational complexity and thus may impair real time performance. 
-  * We do not recommend using multiple lags with very low sampling rates. 
-  * 'Area' and 'FR' models might require a different number of lags.
+    * We do not recommend using multiple lags with very low sampling rates. 
+    * 'Area' and 'FR' models might require a different number of lags.
 1. CONTACT AREA RADIUS – this corresponds to the size of the projection field
 at the selected location. The selected contact area is displayed on the hand
 diagram once 'Pick Contact Area' is clicked
 1. PICK CONTACT AREA 
-  * Option 1 - 'Centered on pad' will pick a circular area centered on a finger
+    * Option 1 - 'Centered on pad' will pick a circular area centered on a finger
   or palmar pad.
-  * Option 2 - 'Manual pick' will place the contact exactly where you click on
+    * Option 2 - 'Manual pick' will place the contact exactly where you click on
   the hand figure. Caution: avoid placing contacts at boundaries between pads.
 1. SAVE MODEL - pick a location to save your models. By default, model
 coefficients, variable names, model performance (R-squared) and all
