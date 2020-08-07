@@ -19,7 +19,7 @@ to the Matlab directory.
 
 To call the GUI interface, type 'TouchMime' in the command line.
 
-### dependencies
+### Dependencies
 
 * MATLAB
     * Signal Processing Toolbox
@@ -65,7 +65,7 @@ diagram once 'Pick Contact Area' is clicked
 coefficients, variable names, model performance (R-squared) and all
 GUI-specified input parameters to the model will be saved. 
 
-### OTHER WARNINGS
+### Best Practices
 
 For sampling rates above 100 Hz, we resample the area estimate and stimulus
 parameters to 100 Hz and provide coefficients for a resampled model. For
